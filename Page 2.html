@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body style = background-color:#202020>
+<h1 style = color:white>JohnTriesEverything</h1>
+<style>
+.centerWhite {
+	text-align:center;
+	color: white;
+	font-size: 20px;
+}
+</style>
+<p style = "color:white;font-size:14px"> Total hints: 3 </p>
+
+<br>
+<br>
+
+<p class = centerWhite> Someone<span style = "color:#202020;font-size:15px">a</span>once told me<span style = "color:#202020;font-size:15px">r</span>"Happiness can<span style = "color:#202020;font-size:15px">i</span>be found<span style = "color:#202020;font-size:15px">d</span>even in<span style = "color:#202020;font-size:15px">r</span>the brightest<span style = "color:#202020;font-size:15px">a</span>of times,<span style = "color:#202020;font-size:15px">r</span>if one<span style = "color:#202020;font-size:15px">e</span>only remembers<span style = "color:#202020;font-size:15px">H</span>to turn<span style = "color:#202020;font-size:15px">a</span>off the<span style = "color:#202020;font-size:15px">z</span>light," but<span style = "color:#202020;font-size:15px">y</span>I always<span style = "color:#202020;font-size:11px">w</span>thought it<span style = "color:#202020;font-size:15px">r</span>made no<span style = "color:#202020;font-size:15px">y</span>sense. - Page 55
+</p>
+<center><img src = "http://docs.google.com/uc?export=open&id=1QRHSsGSbYpkd81zkYoBAzT1VIfZFKzlZ"></center>
+<style> 
+input[type=text] {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #000000;
+  color: white;
+}
+</style>
+<center><input id="password" type="text" placeholder="PASSWORD" onkeypress="checkPassword()" /></center>
+
+<p class = centerWhite> Things are not always what they seem; the first appearance decieves many - Phaedrus
+</p>
+
+<script>
+var input = document.getElementById("password");
+var successSound = new Audio();
+	successSound.src = "http://docs.google.com/uc?export=open&id=1xH6FTF7Tud_5pFqgrx_DDyWu4IsP7bBA";
+var failSound = new Audio();
+	failSound.src = "http://docs.google.com/uc?export=open&id=1TcldM60ORDFRfuSSDrSdk3kLMf6f_-LK";
+
+input.addEventListener("keyup", function(event) {
+	if (event.keyCode === 13) {
+		if ((document.getElementById("password").value === "Harry yer a wizard")||(document.getElementById("password").value === "Harry, yer a wizard")) {
+		successSound.volume = 0.5;
+		successSound.play();
+		alert('Awesome! Are you a potterhead like me? :)');
+		window.location.replace("file:///C:/Users/John/Desktop/Website%20building/Page%203.0.html");
+		}
+		else {
+		failSound.volume = 0.5;
+		failSound.play();
+		//alert ('Try again.');
+		}
+		
+  }
+});
+</script>
+<script type="text/JavaScript">
+//Script courtesy of BoogieJack.com
+var message="NoRightClicking";
+function defeatIE() {if (document.all) {(message);return false;}}
+function defeatNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;}
+else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;}
+document.oncontextmenu=new Function("return false")
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
