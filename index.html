@@ -3,21 +3,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body style = background-color:#202020>
 <h1 style = color:white>JohnTriesEverything</h1>
-<p style = "color:white;font-size:14px"> Total hints: 2 </p><br>
-<br>
-<br>
 <style>
 .centerWhite {
-	color: white;
 	text-align:center;
+	color: white;
 	font-size: 20px;
 }
-
 </style>
+<p style = "color:white;font-size:14px"> Total hints: 4</p>
 
-<p class = "centerWhite" > Welcome to my website! To continue, please enter the password. </p>
-<center><img src = "http://docs.google.com/uc?export=open&id=1W39uPswogUuOLDQDuFBofLgOq_yNCXYI"></center>
-<p class = "centerWhite" > Have you ever thought about the meaning of life, the univerise, and everything? </p>
+<br>
+<p class = "centerWhite" > knowLeDge is Pizza and is pIzzA poweR? powEr is mOney, moNey is TiMe </p>
+<center><img src = "http://docs.google.com/uc?export=open&id=17Svxu5wnHzGLcyt-GK1rUbmtY8oqvp5i"></center>
+
 <style> 
 input[type=text] {
   width: 15%;
@@ -29,7 +27,7 @@ input[type=text] {
   color: white;
 }
 </style>
-<center><input id="password" type="text" placeholder="PASSWORD" onkeypress="checkPassword()" /></center>
+<center><input id="password" type="text" placeholder="PASSWORD" onkeypress="checkPassword()" />  
 
 <script>
 var input = document.getElementById("password");
@@ -40,18 +38,21 @@ var failSound = new Audio();
 
 input.addEventListener("keyup", function(event) {
 	if (event.keyCode === 13) {
-		if (document.getElementById("password").value === "42") {
-		successSound.volume = 0.5;
+		if ((document.getElementById("password").value === "rec and parks")||
+		(document.getElementById("password").value === "skarp dna cer")||
+		(document.getElementById("password").value === "REC AND PARKS")||
+		(document.getElementById("password").value === "SKARP DNA CER")) {
+		successSound.volume = 0.1;
 		successSound.play();
-		alert('Well done! I hope you are paying attention. It is going to get harder from now on.');
+		alert('Well done!');
 		window.location.replace("http://htmlpreview.github.io/?https://github.com/johntrieseverything/johntrieseverything.github.io/blob/main/Page%202.html");
 		}
 		else {
-		failSound.volume = 0.5;
+		failSound.volume = 0.1;
 		failSound.play();
 		//alert ('Try again.');
 		}
-		
+	
   }
 });
 </script>
