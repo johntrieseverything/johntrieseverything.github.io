@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body style = background-color:#202020>
+<h1 style = color:white>JohnTriesEverything</h1>
+<style>
+.centerWhite {
+	text-align:center;
+	color: white;
+	font-size: 20px;
+}
+</style>
+<p style = "color:white;font-size:14px"> Total hints: 4</p>
+
+<br>
+<p class = "centerWhite" > knowLeDge is Pizza and is pIzzA poweR? powEr is mOney, moNey is TiMe </p>
+<center><img src = "http://docs.google.com/uc?export=open&id=17Svxu5wnHzGLcyt-GK1rUbmtY8oqvp5i"></center>
+
+<style> 
+input[type=text] {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #000000;
+  color: white;
+}
+</style>
+<center><input id="password" type="text" placeholder="PASSWORD" onkeypress="checkPassword()" />  
+
+<script>
+var input = document.getElementById("password");
+var successSound = new Audio();
+	successSound.src = "http://docs.google.com/uc?export=open&id=1xH6FTF7Tud_5pFqgrx_DDyWu4IsP7bBA";
+var failSound = new Audio();
+	failSound.src = "http://docs.google.com/uc?export=open&id=1TcldM60ORDFRfuSSDrSdk3kLMf6f_-LK";
+
+input.addEventListener("keyup", function(event) {
+	if (event.keyCode === 13) {
+		if ((document.getElementById("password").value === "rec and parks")||
+		(document.getElementById("password").value === "skarp dna cer")||
+		(document.getElementById("password").value === "REC AND PARKS")||
+		(document.getElementById("password").value === "SKARP DNA CER")) {
+		successSound.volume = 0.1;
+		successSound.play();
+		alert('Well done!');
+		window.location.replace("file:///C:/Users/John/Desktop/Website%20building/Page%204.0.html");
+		}
+		else {
+		failSound.volume = 0.1;
+		failSound.play();
+		//alert ('Try again.');
+		}
+		
+  }
+});
+</script>
+<script type="text/JavaScript">
+//Script courtesy of BoogieJack.com
+var message="NoRightClicking";
+function defeatIE() {if (document.all) {(message);return false;}}
+function defeatNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;}
+else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;}
+document.oncontextmenu=new Function("return false")
+</script>
+</body>
+</html>
