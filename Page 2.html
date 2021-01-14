@@ -33,7 +33,6 @@ input[type=text] {
 
 <p class = centerWhite> Things are not always what they seem; the first appearance decieves many - Phaedrus
 </p>
-
 <script>
 var input = document.getElementById("password");
 var successSound = new Audio();
@@ -44,13 +43,13 @@ var failSound = new Audio();
 input.addEventListener("keyup", function(event) {
 	if (event.keyCode === 13) {
 		if ((document.getElementById("password").value === "Harry yer a wizard")||(document.getElementById("password").value === "Harry, yer a wizard")) {
-		successSound.volume = 0.5;
+		successSound.volume = 0.1;
 		successSound.play();
 		alert('Awesome! Are you a potterhead like me? :)');
-		window.location.replace("http://htmlpreview.github.io/?https://github.com/johntrieseverything/johntrieseverything.github.io/blob/main/Page%203.0.html");
+		window.location.replace("http://htmlpreview.github.io/?https://github.com/johntrieseverything/johntrieseverything.github.io/blob/main/Page%203.html");
 		}
 		else {
-		failSound.volume = 0.5;
+		failSound.volume = 0.1;
 		failSound.play();
 		//alert ('Try again.');
 		}
