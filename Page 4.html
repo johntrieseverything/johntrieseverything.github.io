@@ -39,14 +39,14 @@ var failSound = new Audio();
 
 input.addEventListener("keyup", function(event) {
 	if (event.keyCode === 13) {
-		if ((document.getElementById("password").value === "FOLLOW YOUR DREAM")||(document.getElementById("password").value === "follow your dream")) {
-		successSound.volume = 0.5;
+		if ((document.getElementById("password").value === "FOLLOW YOUR DREAM")||(document.getElementById("password").value === "follow your dream")){
+		successSound.volume = 0.1;
 		successSound.play();
-		alert('Wow! That one was tough huh? Good job! Now on to the hardest one! Good luck!');
+		alert('Wow! Congrats on finishing the puzzles!');
 		//window.location.replace("file:///C:/Users/John/Desktop/Website%20building/Page%205.html");
 		}
 		else {
-		failSound.volume = 0.5;
+		failSound.volume = 0.1;
 		failSound.play();
 		//alert ('Try again.');
 		}
